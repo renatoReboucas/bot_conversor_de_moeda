@@ -6,7 +6,7 @@ console.log('Bem vindo ao Bot conversor 🤖💰');
 
 async function robo() {
   try{
-    const browser = await puppeteer.launch({ headless: false, ignoreHTTPSErrors: true });
+    const browser = await puppeteer.launch({ headless: true, ignoreHTTPSErrors: true });
     const page = await browser.newPage();
     // const waitForNavigation = page.waitForNavigation();
     const moedaBase = readlineSync.question( 'Infome uma moeda base: ') ||'dolar'
